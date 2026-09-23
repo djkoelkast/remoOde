@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.MoodeRemote" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#1F1F1F</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#4CAF50</item>
+    </style>
+</resources>
