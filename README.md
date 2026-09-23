@@ -3,7 +3,18 @@
 Minimale Android-app: een fullscreen WebView die je moOde-webinterface laadt,
 zodat je moOde niet via de telefoonbrowser hoeft te openen.
 
-## Bouwen
+## Bouwen zonder Android Studio (GitHub Actions)
+Deze map bevat ook `.github/workflows/build-apk.yml`. Als je dit project
+naar een GitHub-repo pusht, bouwt GitHub automatisch een APK voor je:
+1. Maak een (gratis, mag privé) repo op GitHub en push deze map erheen.
+2. Ga naar het tabblad **Actions** van de repo — de workflow "Build APK"
+   start vanzelf.
+3. Als hij groen is: open de run → onderaan bij **Artifacts** staat
+   `moode-remote-debug-apk` (zip met de `.apk` erin) → downloaden.
+4. APK naar je telefoon sturen en installeren (installatie uit
+   onbekende bronnen moet je mogelijk eenmalig toestaan).
+
+## Bouwen in Android Studio
 1. Open deze map in Android Studio (`File → Open`).
 2. Laat Android Studio de Gradle-wrapper aanvullen als hij daarom vraagt
    (dit project bevat geen `gradlew`/`gradle-wrapper.jar`, die genereert
